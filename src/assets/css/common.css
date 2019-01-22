@@ -1,0 +1,9 @@
+header h1{
+    background: url('../images/pointer.png')
+}
+header img{
+    width: 100px;
+}
+nav a{
+    margin-left: 10px;
+}

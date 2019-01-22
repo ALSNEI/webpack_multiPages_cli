@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/pages/page1/page1.css"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA,C","file":"assets/css/page1/page1.cc52055ed.css","sourcesContent":["a{\n    display: block;\n    height: 100px;\n    width:100px;\n    background-image: url(http://127.0.0.1:5500/dist/assets/images/pointer.25cb28ca4.png)\n}"],"sourceRoot":""}

@@ -1,0 +1,1 @@
+import './subpage.css'
