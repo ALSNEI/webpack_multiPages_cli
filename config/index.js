@@ -42,7 +42,7 @@ function getAllPages(dirName) {
     })
 
     let subDirs = files.filter(function (file) {
-        return fs.statSync(pagePath + '/' + file).isDirectory()
+        return file !=='img' && fs.statSync(pagePath + '/' + file).isDirectory()
     }).map(function (subName) {
         return dirName + '/' + subName
     })
@@ -63,8 +63,8 @@ envList.set('development',{
     assetsPublicPath: '/dist/'
 }).set('production',{
     // 可配置 CDN
-    // assetsPublicPath: 'http://127.0.0.1:5500/dist/'
-    assetsPublicPath: '/'
+    assetsPublicPath: 'http://127.0.0.1:5500/dist/'
+    // assetsPublicPath: '/'
 })
 
 const assetsPublicPath = envList.get(process.env.NODE_ENV);

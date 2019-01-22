@@ -4,3 +4,6 @@ a{
     width:100px;
     background-image: url('../../assets/images/pointer.png')
 }
+.test{
+    background: url('./img/bg.jpg')
+}
