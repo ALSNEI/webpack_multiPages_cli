@@ -4,7 +4,7 @@
   "description": "",
   "private": true,
   "scripts": {
-    "dev": "cross-env NODE_ENV=production webpack-dev-server --open --config build/webpack.dev.config.js",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --config build/webpack.dev.config.js",
     "build": "cross-env NODE_ENV=production webpack --config build/webpack.pro.config.js"
   },
   "keywords": [],
@@ -32,6 +32,7 @@
     "url-loader": "^1.1.2",
     "webpack": "^4.28.4",
     "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.1.14",
     "webpack-merge": "^4.2.1"
   },
   "dependencies": {

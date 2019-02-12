@@ -60,11 +60,11 @@ function getFileName(str) {
 
 const envList = new Map();
 envList.set('development',{
-    assetsPublicPath: '/dist/'
+    assetsPublicPath: '/'
 }).set('production',{
     // 可配置 CDN
-    assetsPublicPath: 'http://127.0.0.1:5500/dist/'
-    // assetsPublicPath: '/'
+    // assetsPublicPath: 'http://127.0.0.1:5500/dist/'
+    assetsPublicPath: '/'
 })
 
 const assetsPublicPath = envList.get(process.env.NODE_ENV);

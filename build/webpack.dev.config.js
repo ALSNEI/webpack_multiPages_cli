@@ -31,7 +31,7 @@ const webpackConfigDev = {
         }
     },
     devServer:{
-        contentBase:path.resolve(__dirname,'../src'),
+        contentBase:path.resolve(__dirname,'../src/pages'),
         host:'localhost',
         clientLogLevel: 'none',
         noInfo: true,
