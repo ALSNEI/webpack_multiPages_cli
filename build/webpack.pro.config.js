@@ -12,7 +12,7 @@ const webpackConfigProd = {
 		path: config.assetsRoot,
 		publicPath: config.build.assetsPublicPath
 	},
-	devtool: 'source-map',
+	// devtool: 'source-map',
 	plugins: [
 		//删除dist目录
         new CleanWebpackPlugin(['dist'], {
@@ -22,7 +22,7 @@ const webpackConfigProd = {
 		// new extractTextPlugin('assets/css/[name][hash].css'), //此处也可以根据splitChunkPlugin的chunk名字做对应
 		new MiniCssExtractPlugin({
             filename: config.assetsSubDirectory + '/css/[name].[contenthash:9].css',
-            chunkFilename: "css/[id].[contenthash:9].css"
+            chunkFilename: "/css/[id].[contenthash:9].css"
 		}),
 	],
 	optimization: {

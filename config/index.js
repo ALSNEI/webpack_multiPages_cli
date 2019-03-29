@@ -64,8 +64,9 @@ envList.set('development',{
 }).set('production',{
     // 可配置 CDN
     // assetsPublicPath: 'http://127.0.0.1:5500/dist/'
-    assetsPublicPath: '/'
+    assetsPublicPath: '/dist/'
 })
+
 
 const assetsPublicPath = envList.get(process.env.NODE_ENV);
 
